@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Random brojevi</title>
+</head>
+<body>
+ <script type="text/javascript">
+    const randomBrojevi = (a,b) => {
+        for(let i = 0; i < 5; i++){
+            const slucBroj = Math.floor(Math.random() * (b - a + 1)) + a
+            console.log(slucBroj)
+        }
+    }
+
+    randomBrojevi(10, 50)
+ </script>
+</body>
+</html>

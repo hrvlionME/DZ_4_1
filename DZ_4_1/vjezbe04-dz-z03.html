@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Prosti brojevi</title>
+</head>
+<body>
+ <script type="text/javascript">
+    for(let i = 1; i < 1000; i++)
+    {   
+        if(i == 1) continue; //1 nije ni prost ni slozen
+        let kontrola = 0
+        for (let j = 2; j <= i/2; j++)
+        {
+            if(i % j == 0)
+                kontrola = 1
+        }
+        if(kontrola == 0){
+            console.log(i)
+            document.write(i + "</br>")
+        }
+    }
+ </script>
+</body>
+</html>

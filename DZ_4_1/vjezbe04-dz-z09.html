@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Savrseni brojevi</title>
+</head>
+<body>
+ <script type="text/javascript">
+    let n = prompt("Unesite broj")
+    for(let i = 1; i <= n ; i++){
+        if(i == 1) continue;
+        let sum = 0;
+        for(let j = 1; j < i; j++){
+            if(i % j == 0)
+                sum += j;
+        }
+        if(sum == i)
+            console.log(i)
+    }
+ </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Objekti</title>
+</head>
+<body>
+ <script type="text/javascript">
+    const osoba1 = {
+        firstName: "Marko",
+        lastName: "Maric",
+        age: 40,
+        eyeColor: "black"
+    } 
+    const osoba2 = {
+        firstName: "Hrvoje",
+        lastName: "Kozul",
+        age: 21,
+        eyeColor: "black"
+    } 
+    const osoba3 = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 42,
+        eyeColor: "blue"
+    } 
+    const osobe = [osoba1, osoba2,  osoba3]
+    osobe.forEach((osoba) => {
+        document.write(osoba.firstName + " " + osoba.lastName + " is " + osoba.age + " years old and has " + osoba.eyeColor + " eyes </br>")
+    })
+ </script>
+</body>
+</html>

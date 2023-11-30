@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Polje</title>
+</head>
+<body>
+ <script type="text/javascript">
+    let arr = ["Ovo", "je", "My", "prvi", "komad", "OF", "JAVASCRIPT", "koda", "Koji", ",", "je", "proradio"]
+
+    arr.map((el) => {
+        if(el.length > 5){
+            let kontrola = 1
+            for(let i = 0; i < el.length; i++)
+                if(el.charAt(i) == el.charAt(i).toLowerCase())
+                    kontrola = 0
+            if(kontrola == 1)
+                console.log(el) 
+        }
+    })
+ </script>
+</body>
+</html>

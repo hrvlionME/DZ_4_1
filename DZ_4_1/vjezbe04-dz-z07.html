@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Anonimna funkcija</title>
+</head>
+<body>
+ <script type="text/javascript">
+    var anonimnaFunkcija = function(input) {
+  if (typeof input === 'number') {
+    return input * input
+  } else {
+    return "Greska: Ocekivan broj."
+  }
+}
+console.log(anonimnaFunkcija(5))
+console.log(anonimnaFunkcija("abc"))
+ </script>
+</body>
+</html>

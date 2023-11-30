@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Polje</title>
+</head>
+<body>
+ <script type="text/javascript">
+    var polje = new Array(1,2,3,4,7,8,5,6,9, 55, 12, 4,85);
+    document.write("Pocetna duljina polja: " + polje.length + "</br>")
+    document.write("Sortirano polje: " + polje.sort((a,b) => {return a-b;}) + "</br>")
+    
+    var obrnuto = polje.sort((a,b) => {return a-b;}).reverse()
+    document.write("Obrnuto sortirano polje: " + obrnuto + "</br>")
+    document.write("Obrnuto sortirano polje bez zadnjeg clana: " + obrnuto.slice(0,12) + "</br>")
+    var sliced = obrnuto.slice(0,12)
+    sliced.push(19, 22)
+    document.write("Polje sa 2 nova clana: " + sliced + "</br>")
+    var polje2 = new Array("Banana", "Orange", "Apple", "Mango")
+    var polje_final = polje + polje2
+    document.write("Konacno polje: " + polje_final)
+ </script>
+</body>
+</html>
